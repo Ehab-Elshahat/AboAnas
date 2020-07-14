@@ -1,6 +1,4 @@
 $(function () {
-  
-
   // When Window Scrolling
   // Select Scroll Top Btn
   var scrollToTopBtn = $(".totop");
@@ -33,7 +31,6 @@ $(function () {
     $(this).parent().siblings().removeClass("active");
   });
 
-
   // typed js
   var typed = new Typed(".element", {
     strings: ["Ehab Elshahat", "Web Desgin.", "Front End Developer."],
@@ -44,16 +41,7 @@ $(function () {
     loopCount: Infinity,
   });
 
-  // slider
-  $(".bxslider").bxSlider({
-    pager: false,
-    speed: 1000,
-    nextText: "<i class='fas fa-chevron-right'></i>",
-    prevText: "<i class='fas fa-chevron-left'></i>",
-    nextSelector: $(".next"),
-    prevSelector: $(".prev"),
-  });
-
+  // slide
   $("#owl-example").owlCarousel({
     loop: true,
     nav: true,
@@ -76,11 +64,10 @@ $(function () {
   });
 
   $(window).scroll(function () {
-
     var blocks = $(".block");
 
     blocks.each(function () {
-      if ($(window).scrollTop() > $(this).offset().top  - 100) {
+      if ($(window).scrollTop() > $(this).offset().top - 100) {
         var blockId = "#" + $(this).attr("id");
 
         $(".nav-item ").removeClass("active");
@@ -93,30 +80,30 @@ $(function () {
   });
 
   // Toggle Class Open On Settigs Box
-  $(".toggler-icon").click(function() {
-    $(".settings-box").toggleClass("open")
-  })
+  $(".toggler-icon").click(function () {
+    $(".settings-box").toggleClass("open");
+  });
 
   // Color Option
-  $(".color-option ul li").click(function () { 
-    
+  $(".color-option ul li").click(function () {
+    $(".color-option ul li").removeClass("active");
+
     // Get Attr Data color from li
     var color = $(this).attr("data-color");
-    
+
     // Set LocalStorage Item
-    localStorage.setItem("theme-color", color );
+    localStorage.setItem("theme-color", color);
 
     // Refresh Window
     location.reload();
-    
   });
 
+  // Set Color On Classes theme-color From Local Storage
   $(".theme-color").css("color", localStorage.getItem("theme-color"));
 
+  // Set Color And background-color On Classes theme-background From Local Storage
   $(".theme-background").css({
     "background-color": localStorage.getItem("theme-color"),
-    "color": "#FFF",
-  })
-
+    color: "#FFF",
+  });
 });
-

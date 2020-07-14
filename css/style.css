@@ -15,11 +15,13 @@ html {
 .settings-box {
   position: fixed;
   left: -200px;
-  top: 0px;
+  top: 50%;
   bottom: 0;
   width: 200px;
-  height: 100vh;
-  background-color: #333333e6;
+  height: 300px;
+  background-color: #2d3436;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   z-index: 10000;
@@ -31,19 +33,24 @@ html {
 
 .settings-box .toggler-icon {
   position: absolute;
-  top: 150px;
+  top: 50%;
   left: 200px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   font-size: 25px;
   cursor: pointer;
 }
 
 .settings-box .color-option {
   padding: 10px;
-  background-color: #cacbcc;
 }
 
 .settings-box .color-option h4 {
+  color: #FFF;
   text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  padding-top: 10px;
 }
 
 .settings-box .color-option ul {
@@ -895,6 +902,12 @@ header .heder-card .card .details-right p span {
 .contact-me form input[type="submit"]:hover {
   -webkit-transform: translateY(-3px);
           transform: translateY(-3px);
+}
+
+@media (max-width: 767px) {
+  .contact-me form input[type="submit"] {
+    margin: auto;
+  }
 }
 
 footer {
