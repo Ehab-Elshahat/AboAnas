@@ -12,6 +12,70 @@ html {
   scroll-behavior: smooth;
 }
 
+.settings-box {
+  position: fixed;
+  left: -200px;
+  top: 0px;
+  bottom: 0;
+  width: 200px;
+  height: 100vh;
+  background-color: #333333e6;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  z-index: 10000;
+}
+
+.settings-box.open {
+  left: 0;
+}
+
+.settings-box .toggler-icon {
+  position: absolute;
+  top: 150px;
+  left: 200px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.settings-box .color-option {
+  padding: 10px;
+  background-color: #cacbcc;
+}
+
+.settings-box .color-option h4 {
+  text-align: center;
+}
+
+.settings-box .color-option ul {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.settings-box .color-option ul li {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.settings-box .color-option ul li:nth-child(1) {
+  background-color: #ED4C67;
+}
+
+.settings-box .color-option ul li:nth-child(2) {
+  background-color: #009432;
+}
+
+.settings-box .color-option ul li:nth-child(3) {
+  background-color: #0652DD;
+}
+
+.settings-box .color-option ul li:nth-child(4) {
+  background-color: #833471;
+}
+
 header {
   background-image: url("../imges/Header-Background.svg");
   background-position: center;
@@ -311,7 +375,7 @@ header .heder-card .card .details-right p span {
 
 .services h2 {
   margin-bottom: 15px;
-  font-weight: bold;
+  color: #0d47a1;
 }
 
 .services p {
@@ -409,7 +473,6 @@ header .heder-card .card .details-right p span {
 }
 
 .experties h2 {
-  font-weight: bold;
   color: #0d47a1;
   margin-bottom: 20px;
 }
@@ -477,6 +540,7 @@ header .heder-card .card .details-right p span {
 
 .portfolio h2 {
   margin-bottom: 20px;
+  color: #0d47a1;
 }
 
 .portfolio p {

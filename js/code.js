@@ -76,9 +76,7 @@ $(function () {
 
     var blocks = $(".block");
 
-    blocks.each(function (block) {
-      // console.log($(this).offset().top);
-
+    blocks.each(function () {
       if ($(window).scrollTop() > $(this).offset().top  - 100) {
         var blockId = "#" + $(this).attr("id");
 
@@ -90,4 +88,19 @@ $(function () {
       }
     });
   });
+
+  // Toggle Class Open On Settigs Box
+  $(".toggler-icon").click(function() {
+    $(".settings-box").toggleClass("open")
+  })
+
+  // Color Option
+  $(".color-option ul li").click(function () { 
+    
+    var color = $(this).attr("data-color")
+
+    $(".theme-color").css("color", color)
+    
+  });
+
 });
