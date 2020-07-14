@@ -1,4 +1,6 @@
 $(function () {
+  
+
   // When Window Scrolling
   // Select Scroll Top Btn
   var scrollToTopBtn = $(".totop");
@@ -30,6 +32,7 @@ $(function () {
     $(this).parent().addClass("active");
     $(this).parent().siblings().removeClass("active");
   });
+
 
   // typed js
   var typed = new Typed(".element", {
@@ -97,10 +100,23 @@ $(function () {
   // Color Option
   $(".color-option ul li").click(function () { 
     
-    var color = $(this).attr("data-color")
+    // Get Attr Data color from li
+    var color = $(this).attr("data-color");
+    
+    // Set LocalStorage Item
+    localStorage.setItem("theme-color", color );
 
-    $(".theme-color").css("color", color)
+    // Refresh Window
+    location.reload();
     
   });
 
+  $(".theme-color").css("color", localStorage.getItem("theme-color"));
+
+  $(".theme-background").css({
+    "background-color": localStorage.getItem("theme-color"),
+    "color": "#FFF",
+  })
+
 });
+

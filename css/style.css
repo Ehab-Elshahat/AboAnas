@@ -20,8 +20,8 @@ html {
   width: 200px;
   height: 100vh;
   background-color: #333333e6;
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   z-index: 10000;
 }
 
@@ -61,19 +61,23 @@ html {
 }
 
 .settings-box .color-option ul li:nth-child(1) {
-  background-color: #ED4C67;
+  background-color: #f44336;
 }
 
 .settings-box .color-option ul li:nth-child(2) {
-  background-color: #009432;
+  background-color: #4caf50;
 }
 
 .settings-box .color-option ul li:nth-child(3) {
-  background-color: #0652DD;
+  background-color: #0d47a1;
 }
 
 .settings-box .color-option ul li:nth-child(4) {
-  background-color: #833471;
+  background-color: #673ab7;
+}
+
+.settings-box .color-option ul li:nth-child(5) {
+  background-color: #e91e63;
 }
 
 header {
@@ -129,8 +133,8 @@ header .navbar .navbar-nav .nav-item .nav-link {
   text-transform: capitalize;
   margin-left: 8px;
   font-weight: bold;
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   border-bottom: 2px solid transparent;
 }
 
@@ -166,8 +170,8 @@ header .navbar .social a {
   color: #0d47a1;
   text-decoration: none;
   margin: 0 8px;
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   display: inline-block;
 }
 
@@ -244,7 +248,6 @@ header .hero-area .header-left .btns a {
   padding: 10px 25px;
   border-radius: 10px;
   font-weight: bold;
-  border: 1px solid #0d47a1;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
@@ -257,16 +260,6 @@ header .hero-area .header-left .btns a:focus {
 header .hero-area .header-left .btns a:hover {
   -webkit-transform: translateY(-3px);
           transform: translateY(-3px);
-}
-
-header .hero-area .header-left .btns a:last-child {
-  background-color: transparent;
-  color: #0d47a1;
-}
-
-header .hero-area .header-left .btns a:last-child:hover {
-  background-color: #0d47a1;
-  color: #eceff1;
 }
 
 header .hero-area .header-right {
@@ -803,7 +796,7 @@ header .heder-card .card .details-right p span {
 
 .testimonial .slider .owl-carousel .owl-nav button span {
   font-size: 50px;
-  background-color: #FFF;
+  background-color: #fff;
   -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   display: block;
@@ -865,8 +858,8 @@ header .heder-card .card .details-right p span {
   text-decoration: none;
   margin-top: 15px;
   display: block;
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .contact-me .contact-box a:hover {
@@ -893,9 +886,9 @@ header .heder-card .card .details-right p span {
 
 .contact-me form input[type="submit"] {
   background-color: #0d47a1;
-  color: #FFF;
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
+  color: #fff;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   padding: 8px 16px;
 }
 
@@ -921,8 +914,8 @@ footer .social-box ul li {
   margin: 3px;
   border-radius: 50%;
   border: 1px solid #263238;
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 footer .social-box ul li:hover {
@@ -944,7 +937,7 @@ footer .copy-right p {
   position: fixed;
   right: 20px;
   bottom: 20px;
-  color: #FFF;
+  color: #fff;
   background-color: #0d47a1;
   padding: 5px 7px;
   border-radius: 50%;

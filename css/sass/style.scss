@@ -18,7 +18,7 @@ html {
   scroll-behavior: smooth;
 }
 
-// Start Settings Box 
+// Start Settings Box
 .settings-box {
   position: fixed;
   left: -200px;
@@ -27,7 +27,7 @@ html {
   width: 200px;
   height: 100vh;
   background-color: #333333e6;
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   z-index: 10000;
 
   &.open {
@@ -46,14 +46,14 @@ html {
     padding: 10px;
     background-color: #cacbcc;
 
-    h4{
+    h4 {
       text-align: center;
     }
 
-    ul{
+    ul {
       text-align: center;
       margin-bottom: 0;
-      li{
+      li {
         display: inline-block;
         width: 20px;
         height: 20px;
@@ -62,22 +62,25 @@ html {
         cursor: pointer;
 
         &:nth-child(1) {
-          background-color: #ED4C67;
+          background-color: #f44336;
         }
         &:nth-child(2) {
-          background-color: #009432;
+          background-color: #4caf50;
         }
         &:nth-child(3) {
-          background-color: #0652DD;
+          background-color: #0d47a1;
         }
         &:nth-child(4) {
-          background-color: #833471;
+          background-color: #673ab7;
+        }
+        &:nth-child(5) {
+          background-color: #e91e63;
         }
       }
     }
   }
 }
-// End Settings Box 
+// End Settings Box
 
 // Start Header
 header {
@@ -124,7 +127,7 @@ header {
       text-transform: capitalize;
       margin-left: 8px;
       font-weight: bold;
-      transition: all .3s ease-in-out;
+      transition: all 0.3s ease-in-out;
       border-bottom: 2px solid transparent;
       &:hover {
         color: $main-color;
@@ -149,9 +152,9 @@ header {
         color: $main-color;
         text-decoration: none;
         margin: 0 8px;
-        transition: all .3s ease-in-out;
+        transition: all 0.3s ease-in-out;
         display: inline-block;
-        &:hover{
+        &:hover {
           transform: translateY(-3px);
         }
       }
@@ -159,7 +162,6 @@ header {
     &.scrolling {
       background-color: #fff;
       box-shadow: 0px 0px 33px 0px rgba(0, 0, 0, 0.2);
-      
     }
   }
 }
@@ -206,7 +208,6 @@ header .hero-area {
         padding: 10px 25px;
         border-radius: 10px;
         font-weight: bold;
-        border: 1px solid $main-color;
         transition: all 0.3s ease-in-out;
 
         &:focus {
@@ -215,15 +216,6 @@ header .hero-area {
 
         &:hover {
           transform: translateY(-3px);
-        }
-        &:last-child {
-          background-color: transparent;
-          color: $main-color;
-
-          &:hover {
-            background-color: $main-color;
-            color: $body-background-color;
-          }
         }
       }
     }
@@ -636,17 +628,17 @@ header .heder-card {
         display: flex;
         justify-content: center;
         padding: 30px;
-  
+
         img {
           width: 150px;
           margin: 5px;
         }
-  
+
         .text {
           width: 400px;
           text-align: left;
           padding-left: 20px;
-  
+
           h4 {
             margin: 10px 0;
           }
@@ -657,7 +649,7 @@ header .heder-card {
           }
         }
       }
-  
+
       .owl-stage-outer {
         & > div {
           background-color: #fff;
@@ -665,7 +657,7 @@ header .heder-card {
           padding: 20px 0;
         }
       }
-  
+
       .owl-nav {
         display: flex;
         justify-content: space-between;
@@ -680,7 +672,7 @@ header .heder-card {
           }
           span {
             font-size: 50px;
-            background-color: #FFF;
+            background-color: #fff;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
             display: block;
             border-radius: 50%;
@@ -695,7 +687,7 @@ header .heder-card {
 }
 // End Testimonial
 
-// Start contact me 
+// Start contact me
 .contact-me {
   padding: 50px 0;
   h2 {
@@ -711,15 +703,17 @@ header .heder-card {
     padding: 15px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 
-    @media(max-width: 991px) {
+    @media (max-width: 991px) {
       margin-bottom: 30px;
     }
-    
-    .contact-icon{
+
+    .contact-icon {
       margin: auto;
       width: 40px;
 
-      img {width: 100%;}
+      img {
+        width: 100%;
+      }
     }
 
     h4 {
@@ -737,14 +731,14 @@ header .heder-card {
       text-decoration: none;
       margin-top: 15px;
       display: block;
-      transition: all .3s ease-in-out;
+      transition: all 0.3s ease-in-out;
       &:hover {
         color: $heading-color;
       }
     }
   }
   form {
-    input{
+    input {
       padding: 25px 20px;
       &:focus {
         box-shadow: none;
@@ -760,8 +754,8 @@ header .heder-card {
 
     input[type="submit"] {
       background-color: $main-color;
-      color: #FFF;
-      transition: all .3s ease-in-out;
+      color: #fff;
+      transition: all 0.3s ease-in-out;
       padding: 8px 16px;
       &:hover {
         transform: translateY(-3px);
@@ -769,9 +763,9 @@ header .heder-card {
     }
   }
 }
-// End contact me 
+// End contact me
 
-// Start Footer 
+// Start Footer
 footer {
   padding-top: 50px;
 
@@ -789,15 +783,15 @@ footer {
       margin: 3px;
       border-radius: 50%;
       border: 1px solid $heading-color;
-      transition: all .3s ease-in-out;
-  
+      transition: all 0.3s ease-in-out;
+
       &:hover {
         background-color: $main-color;
         color: #fff;
       }
     }
   }
-  
+
   .copy-right {
     background-color: #333;
     padding: 15px 0;
@@ -807,14 +801,14 @@ footer {
     }
   }
 }
-// End Footer 
+// End Footer
 
 // Start Scrool To Top
 .totop {
   position: fixed;
   right: 20px;
   bottom: 20px;
-  color: #FFF;
+  color: #fff;
   background-color: $main-color;
   padding: 5px 7px;
   border-radius: 50%;
@@ -824,7 +818,7 @@ footer {
 }
 // End Scrool To Top
 
-// Custome ScrollBar 
+// Custome ScrollBar
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -835,4 +829,3 @@ footer {
   background-color: $main-color;
   border-radius: 5px;
 }
-

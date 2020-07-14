@@ -1,499 +1,707 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ehab Portfolio</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ehab Portfolio</title>
+    <!-- Fav Icon -->
+    <link
+      rel="shortcut icon"
+      href="imges/favicon-32x32.png"
+      type="image/x-icon"
+    />
 
-  <!-- Fav Icon -->
-  <link rel="shortcut icon" href="imges/favicon-32x32.png" type="image/x-icon" />
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="css/fontawesome.min.css" />
 
-  <!-- FontAwesome -->
-  <link rel="stylesheet" href="css/fontawesome.min.css">
+    <!-- bxslider -->
+    <link rel="stylesheet" href="css/jquery.bxslider.css" />
 
-  <!-- bxslider -->
-  <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <link rel="stylesheet" href="css/owl.carousel.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.css" />
 
-  <link rel="stylesheet" href="css/owl.carousel.css">
-  <link rel="stylesheet" href="css/owl.theme.default.css">
+    <!-- Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Font -->
-  <link
-    href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200&display=swap"
-    rel="stylesheet">
+    <!-- BootStrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
 
-  <!-- BootStrap -->
-  <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Main Style -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-  <!-- Main Style -->
-  <link rel="stylesheet" href="css/style.css" />
-</head>
-
-<body>
-  <!-- Start Settings Box -->
-  <div class="settings-box">
-    <div class="toggler-icon"><i class="fas fa-paint-brush"></i></div>
-    <div class="color-option">
-      <h4 class="text-capitalize">color option</h4>
-      <ul class="list-unstyled">
-        <li data-color="#ED4C67"></li>
-        <li data-color="#009432"></li>
-        <li data-color="#0652DD"></li>
-        <li data-color="#833471"></li>
-      </ul>
-    </div>
-  </div>
-
-  <!-- Start Navbar -->
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#"><img src="imges/logo.png" alt="Img-Logo"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a data-scroll="#home" class="nav-link" href="#">Home </a>
-            </li>
-            <li class="nav-item">
-              <a data-scroll="#services" class="nav-link" href="#">services</a>
-            </li>
-            <li class="nav-item">
-              <a data-scroll="#experties" class="nav-link" href="#">experties</a>
-            </li>
-            <li class="nav-item">
-              <a data-scroll="#projects" class="nav-link" href="#">projects</a>
-            </li>
-            <li class="nav-item">
-              <a data-scroll="#testimonial" class="nav-link" href="#">testimonial</a>
-            </li>
-            <li class="nav-item">
-              <a data-scroll="#contact" class="nav-link" href="#">contact</a>
-            </li>
-          </ul>
-        </div>
-        <div class="social">
-          <a class="theme-color" href="#"> <i class="fab fa-facebook-f"></i> </a>
-          <a class="theme-color" href="#"> <i class="fab fa-twitter"></i> </a>
-          <a class="theme-color" href="#"> <i class="fab fa-instagram"></i> </a>
-        </div>
+  <body>
+    <!-- Start Settings Box -->
+    <div class="settings-box">
+      <div class="theme-color toggler-icon">
+        <i class="fas fa-paint-brush"></i>
       </div>
-    </nav>
-
-    <!-- Start Content Header -->
-    <div  id="home" class="hero-area block">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-7 col-md-7">
-            <div class="header-left">
-              <h1 class="text-monospace text-capitalize">Here I Am<br><span class="theme-color">ehab elshahat</span></h1>
-              <p class="lead">i'm a Web Designer front end developer</p>
-              <div class="btns">
-                <a class="btn text-capitalize  mr-2 " href="#">hire me</a>
-                <a class=" theme-color btn text-capitalize  " href="#">download CV <i class="fas fa-download"></i> </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-5 col-md-5">
-            <div class="header-right">
-              <img class="img-fluid mx-auto" src="imges/home.png" alt="">
-            </div>
-          </div>
-        </div>
+      <div class="color-option">
+        <h4 class="text-capitalize">color option</h4>
+        <ul class="list-unstyled">
+          <li data-color="#f44336"></li>
+          <li data-color="#4caf50"></li>
+          <li data-color="#0d47a1"></li>
+          <li data-color="#673ab7"></li>
+          <li data-color="#E91E63"></li>
+        </ul>
       </div>
     </div>
-    <!-- End Content Header -->
 
-    <!-- Start Header Card -->
-    <div class="heder-card">
-      <div class="container">
-        <div class="card bg-light">
+    <!-- Start Navbar -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#"
+            ><img src="imges/logo.png" alt="Img-Logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a data-scroll="#home" class="nav-link" href="#">Home </a>
+              </li>
+              <li class="nav-item">
+                <a data-scroll="#services" class="nav-link" href="#"
+                  >services</a
+                >
+              </li>
+              <li class="nav-item">
+                <a data-scroll="#experties" class="nav-link" href="#"
+                  >experties</a
+                >
+              </li>
+              <li class="nav-item">
+                <a data-scroll="#projects" class="nav-link" href="#"
+                  >projects</a
+                >
+              </li>
+              <li class="nav-item">
+                <a data-scroll="#testimonial" class="nav-link" href="#"
+                  >testimonial</a
+                >
+              </li>
+              <li class="nav-item">
+                <a data-scroll="#contact" class="nav-link" href="#">contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="social">
+            <a class="theme-color" href="#">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a class="theme-color" href="#"> <i class="fab fa-twitter"></i> </a>
+            <a class="theme-color" href="#">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Start Content Header -->
+      <div id="home" class="hero-area block">
+        <div class="container">
           <div class="row">
-            <div class="col-sm-12 col-md-4">
-              <div class="details-left">
-                <h5 class="text-capitalize font-weight-bold">personal details</h5>
-                <p class="text-capitalize">email : <span> ehabelshohat@yahoo.com</span></p>
-                <p class="text-capitalize">Languages : <span> arabic</span></p>
-                <p class="text-capitalize">Nationality : <span> egyptian</span></p>
+            <div class="col-lg-7 col-md-7">
+              <div class="header-left">
+                <h1 class="text-monospace text-capitalize">
+                  Here I Am<br /><span class="theme-color">ehab elshahat</span>
+                </h1>
+                <p class="lead">i'm a Web Designer front end developer</p>
+                <div class="btns">
+                  <a class="theme-background btn text-capitalize mr-2" href="#"
+                    >hire me</a
+                  >
+                  <a class="theme-background btn text-capitalize" href="#"
+                    >download CV <i class="fas fa-download"></i>
+                  </a>
+                </div>
               </div>
             </div>
-            <div class="col-sm-12 col-md-8">
-              <div class="details-right">
-                <h4 id="#typed-strings" class="text-capitalize">i am <span class=" theme-color element"></span></h4>
-                <p class="text-capitalize">my name is: <span class="theme-color">ehab elshahat</span> , I'm a Web Designer and front end developer
-                   Experienced with all stages of the development, i can desgin Modern creative web pages,
-                   Interactive user interfaces and animation, Site responsive to all screens
-                </p>
+            <div class="col-lg-5 col-md-5">
+              <div class="header-right">
+                <img class="img-fluid mx-auto" src="imges/home.png" alt="" />
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- End Header Card -->
-  </header>
-  <!-- End Navbar -->
+      <!-- End Content Header -->
 
-  <!-- Start Services -->
-  <div id="services" class="services block">
-    <div class="container">
-      <h2 class="theme-color text-capitalize text-center pt-5">awesome service</h2>
-      <p class="text-center">I'm a Web Designer. Experienced with all stages of the development <br> cycle for dynamic web projects.</p>
-      <div class="row">
-        <div class="col-lg-4 col-md-6 col-sm-12">
-          <div class="serv-box bg-light">
-            <div class="serv-icon"><img src="imges/design-01.png" alt="desgin-icon"></div>
-            <h3 class=" theme-color text-capitalize">web desginer</h3>
-            <p class="text-capitalize">Modern creative web pages</p>
-            <a href="#" class="text-capitalize">read more <i class="fas fa-chevron-right icon"></i> </a>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-12">
-          <div class="serv-box bg-light">
-            <div class="serv-icon"><img src="imges/design-02.png" alt="desgin-icon"></div>
-            <h3 class=" theme-color text-capitalize">front end developer</h3>
-            <p class="text-capitalize">Interactive user interfaces and animation</p>
-            <a href="#" class="text-capitalize">read more <i class="fas fa-chevron-right icon"></i>  </a>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-12">
-          <div class="serv-box bg-light">
-            <div class="serv-icon"><img src="imges/design-03.png" alt="desgin-icon"></div>
-            <h3 class=" theme-color text-capitalize">responsive desgin</h3>
-            <p class="text-capitalize">Site responsive to all screens</p>
-            <a href="#" class="text-capitalize">read more <i class="fas fa-chevron-right icon"></i>  </a>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-12">
-          <div class="serv-box bg-light">
-            <div class="serv-icon"><img src="imges/design-04.png" alt="desgin-icon"></div>
-            <h3 class=" theme-color text-capitalize">PSD file to code</h3>
-            <p class="text-capitalize">convert PSD file to code</p>
-            <a href="#" class="text-capitalize">read more <i class="fas fa-chevron-right icon"></i> </a>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-12">
-          <div class="serv-box bg-light">
-            <div class="serv-icon"><img src="imges/design-05.png" alt="desgin-icon"></div>
-            <h3 class=" theme-color text-capitalize">clean code</h3>
-            <p class="text-capitalize">clean code without erorrs</p>
-            <a href="#" class="text-capitalize">read more <i class="fas fa-chevron-right icon"></i>  </a>
+      <!-- Start Header Card -->
+      <div class="heder-card">
+        <div class="container">
+          <div class="card bg-light">
+            <div class="row">
+              <div class="col-sm-12 col-md-4">
+                <div class="details-left">
+                  <h5 class="theme-color text-capitalize font-weight-bold">
+                    personal details
+                  </h5>
+                  <p class="text-capitalize">
+                    email : <span> ehabelshohat@yahoo.com</span>
+                  </p>
+                  <p class="text-capitalize">
+                    Languages : <span> arabic</span>
+                  </p>
+                  <p class="text-capitalize">
+                    Nationality : <span> egyptian</span>
+                  </p>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-8">
+                <div class="details-right">
+                  <h4 id="#typed-strings" class="text-capitalize">
+                    i am <span class="theme-color element"></span>
+                  </h4>
+                  <p class="text-capitalize">
+                    my name is: <span class="theme-color">ehab elshahat</span> ,
+                    I'm a Web Designer and front end developer Experienced with
+                    all stages of the development, i can desgin Modern creative
+                    web pages, Interactive user interfaces and animation, Site
+                    responsive to all screens
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-  <!-- End Services -->
+      <!-- End Header Card -->
+    </header>
+    <!-- End Navbar -->
 
-  <!-- Start Work Experties -->
-  <div id="experties" class="experties block">
-    <div class="container">
-      <h2 class="theme-color text-capitalize text-center">work experties</h2>
-      <p class="text-center">I have varied knowledge of these languages ​​and frameworks</p>
-      <div class="row">
-        <div class="col-lg-4 col-md-6 col-sm-12">
-          <div class="expert-box bg-light">
-            <div class="expert-icon">
-              <img  src="imges/expert-01.png" alt="HtML5">
-            </div>
-            <span>90%</span>
-            <h4 class="theme-color text-uppercase">html</h4>
-            <p class="text-capitalize">HTML is the standard markup language for Web pages.</p>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-12">
-          <div class="expert-box bg-light">
-            <div class="expert-icon">
-              <img  src="imges/expert-02.png" alt="CSS">
-            </div>
-            <span>80%</span>
-            <h4 class=" theme-color text-uppercase">css</h4>
-            <p class="text-capitalize">CSS is a language that describes the style of an HTML document.</p>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-12">
-          <div class="expert-box bg-light">
-            <div class="expert-icon">
-              <img  src="imges/expert-03.png" alt="Javascript">
-            </div>
-            <span>70%</span>
-            <h4 class="theme-color text-uppercase">Javascript</h4>
-            <p class="text-capitalize">JavaScript is the programming language of HTML and the Web</p>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-12">
-          <div class="expert-box bg-light">
-            <div class="expert-icon">
-              <img  src="imges/expert-04.png" alt="Bootstrap">
-            </div>
-            <span>95%</span>
-            <h4 class="theme-color text-uppercase">Bootstrap</h4>
-            <p class="text-capitalize">the most popular framework for developing responsive, mobile-first website</p>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-12">
-          <div class="expert-box bg-light">
-            <div class="expert-icon">
-              <img  src="imges/expert-05.png" alt="Jquery">
-            </div>
-            <span>60%</span>
-            <h4 class="theme-color text-uppercase">Jquery</h4>
-            <p class="text-capitalize">jQuery is a JavaScript Library.</p>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-12">
-          <div class="expert-box bg-light">
-            <div class="expert-icon">
-              <img  src="imges/expert-06.png" alt="Vue.js">
-            </div>
-            <span>90%</span>
-            <h4 class="theme-color text-uppercase">Vue.js</h4>
-            <p class="text-capitalize">The Progressive JavaScript Framework</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- End Work Experties -->
-
-  <!-- Start Portfolio -->
-  <div id="projects" class="portfolio block">
-    <div class="container">
-      <h2 class="theme-color text-capitalize text-center">my work & Portfolio</h2>
-      <p class="text-center">These are the projects I have completed</p>
-      <div class="row">
-        <div class="col-lg-12 col-md-12">
-          <div class="port-back">
-            <h3 class=" project-date text-center">19-9-2019</h3>
-            <div class="port-left bg-light">
-              <img src="imges/project-01.png" alt="Project Photo">
-              <div class="port-content">
-                <h4 class="theme-color text-capitalize">travel blog</h4>
-                <p>Lorem ipsum dolor sit amet.</p>
-                <a class="link btn text-capitalize" href="https://ehab-elshahat.github.io/TravelBlog/" target="_blank">Project link</a>
-              </div>
-            </div>
-
-            <div class="clearfix"></div>
-
-            <h3 class="project-date text-center">11-5-2020</h3>
-            <div class="port-right bg-light">
-              <img src="imges/project-02.png" alt="Project Photo">
-              <div class="port-content">
-                <h4 class="theme-color text-capitalize">On next</h4>
-                <p>Lorem ipsum dolor sit amet.</p>
-                <a class="link btn text-capitalize" href="https://ehab-elshahat.github.io/OnNext/" target="_blank">Project link</a>
-              </div>
-            </div>
-
-            <div class="clearfix"></div>
-            <h3 class="project-date text-center">10-7-2020</h3>
-            <div class="port-left bg-light">
-              <img src="imges/project-03.png" alt="Project Photo">
-              <div class="port-content">
-                <h4 class="theme-color text-capitalize">Luxestate</h4>
-                <p>Lorem ipsum dolor sit amet.</p>
-                <a class="link btn text-capitalize" href="https://ehab-elshahat.github.io/Luxestate/" target="_blank">Project link</a>
-              </div>
-            </div>
-
-            <div class="port-right bg-light">
-              <img src="imges/project-04.png" alt="Project Photo">
-              <div class="port-content">
-                <h4 class="theme-color text-capitalize">we</h4>
-                <p>Lorem ipsum dolor sit amet.</p>
-                <a class="link btn text-capitalize" href="https://ehab-elshahat.github.io/we/" target="_blank">Project link</a>
-              </div>
-            </div>
-
-            <div class="clearfix"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- End Portfolio -->
-
-  <!-- Start Clients Say -->
-  <div id="testimonial" class="testimonial block">
-    <div class="container">
-      <h2 class="theme-color text-capitalize text-center">Clients Say</h2>
-      <p class="text-center"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br> Eos hic voluptas at voluptatum blanditiis quod.</p>
-      <div class="slider">
-        <div id="owl-example" class="owl-carousel">
-          <div>
-            <div class="content">
-              <img class="d-inline-block rounded-circle img-thumbnail" src="https://via.placeholder.com/50.png/09f/fff" alt="">
-              <div class="text">
-                <h4 class="text-capitalize">"ehab elshahat"</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, esse ad dolor assumenda odio eligendi!</p>
-              </div>
-            </div>
-          </div>
-  
-          <div>
-            <div class="content">
-              <img class="d-inline-block rounded-circle img-thumbnail" src="https://via.placeholder.com/50.png/09f/fff" alt="">
-              <div class="text">
-                <h4 class="text-capitalize">"ahmed elshahat"</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, esse ad dolor assumenda odio eligendi!</p>
-              </div>
-            </div>
-          </div>
-  
-          <div>
-            <div class="content">
-              <img class="d-inline-block rounded-circle img-thumbnail" src="https://via.placeholder.com/50.png/09f/fff" alt="">
-              <div class="text">
-                <h4 class="text-capitalize">"anas ehab"</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, esse ad dolor assumenda odio eligendi!</p>
-              </div>
-            </div>
-          </div>
-  
-          <div>
-            <div class="content">
-              <img class="d-inline-block rounded-circle img-thumbnail" src="https://via.placeholder.com/50.png/09f/fff" alt="">
-              <div class="text">
-                <h4 class="text-capitalize">"mahmoud abdo"</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, esse ad dolor assumenda odio eligendi!</p>
-              </div>
-            </div>
-          </div>
-  
-          <div>
-            <div class="content">
-              <img class="d-inline-block rounded-circle img-thumbnail" src="https://via.placeholder.com/50.png/09f/fff" alt="">
-              <div class="text">
-                <h4 class="text-capitalize">"hossam ahmed"</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, esse ad dolor assumenda odio eligendi!</p>
-              </div>
-            </div>
-          </div>
-  
-          <div>
-            <div class="content">
-              <img class="d-inline-block rounded-circle img-thumbnail" src="https://via.placeholder.com/50.png/09f/fff" alt="">
-              <div class="text">
-                <h4 class="text-capitalize">"elsyed hassan"</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, esse ad dolor assumenda odio eligendi!</p>
-              </div>
-            </div>
-          </div>
-          
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- End Clients Say -->
-
-  <!-- Start Contact Me -->
-  <div id="contact" class="contact-me block bg-light">
-    <div class="container">
-      <h2 class=" theme-color text-capitalize text-center">contact me</h2>
-      <p class="text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet architecto <br> iusto repellat ex voluptatibus officia.</p>
-      <div class="row">
-        <div class="col-lg-4 col-md-12">
-          <div class="contact-box text-center">
-            <div class="contact-icon">
-              <img src="imges/contact-me-phone.png" alt="phone icon">
-            </div>
-            <h4 class="theme-color text-center">phone</h4>
-            <p>Promising development turmoil inclusive education transformative community</p>
-            <a class="theme-color" href="tel:0096550602459">+965 506 054 59</a>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-12">
-          <div class="contact-box text-center">
-            <div class="contact-icon">
-              <img src="imges/contact-me-email.png" alt="email icon">
-            </div>
-            <h4 class="theme-color text-center">email</h4>
-            <p>Promising development turmoil inclusive education transformative community</p>
-            <a class="theme-color" href="mailto:ehabelshohat@yahoo.com" >ehabelshohat@yahoo.com</a>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-12">
-          <div class="contact-box text-center">
-            <div class="contact-icon">
-              <img src="imges/contact-me-location.png" alt="location icon">
-            </div>
-            <h4 class="theme-color text-center">location</h4>
-            <p>Promising development turmoil inclusive education transformative community</p>
-            <a class="theme-color" href="https://goo.gl/maps/qoXzkMPFhvaU7YAw7" target="_blank">View on Google map</a>
-          </div>
-        </div>
-        
-      </div>
-    </div>
-    <div class="container">
-      <form class="mt-5" action="">
+    <!-- Start Services -->
+    <div id="services" class="services block">
+      <div class="container">
+        <h2 class="theme-color text-capitalize text-center pt-5">
+          awesome service
+        </h2>
+        <p class="text-center">
+          I'm a Web Designer. Experienced with all stages of the development
+          <br />
+          cycle for dynamic web projects.
+        </p>
         <div class="row">
-          <div class="col-md-6 col-sm-12">
-            <div class="form-group">
-              <input class="form-control border rounded text-capitalize" type="text" name="name" id="name" placeholder="first name:">
-            </div>
-            <div class="form-group">
-              <input class="form-control border rounded text-capitalize" type="email" name="email" id="email" placeholder="your email:">
-            </div>
-            <div class="form-group">
-              <input class="form-control border rounded text-capitalize" type="text" name="subject" id="subject" placeholder="your subject:">
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="serv-box bg-light">
+              <div class="serv-icon">
+                <img src="imges/design-01.png" alt="desgin-icon" />
+              </div>
+              <h3 class="theme-color text-capitalize">web desginer</h3>
+              <p class="text-capitalize">Modern creative web pages</p>
+              <a href="#" class="text-capitalize"
+                >read more <i class="fas fa-chevron-right icon"></i>
+              </a>
             </div>
           </div>
-          <div class="col-md-6 col-sm-12">
-            <div class="form-group">
-              <textarea class="form-control text-capitalize border rounded" name="message" placeholder="your message:"></textarea>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="serv-box bg-light">
+              <div class="serv-icon">
+                <img src="imges/design-02.png" alt="desgin-icon" />
+              </div>
+              <h3 class="theme-color text-capitalize">front end developer</h3>
+              <p class="text-capitalize">
+                Interactive user interfaces and animation
+              </p>
+              <a href="#" class="text-capitalize"
+                >read more <i class="fas fa-chevron-right icon"></i>
+              </a>
             </div>
-            <input class="btn d-block ml-auto text-capitalize rounded mt-4" type="submit" value="send Message">
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="serv-box bg-light">
+              <div class="serv-icon">
+                <img src="imges/design-03.png" alt="desgin-icon" />
+              </div>
+              <h3 class="theme-color text-capitalize">responsive desgin</h3>
+              <p class="text-capitalize">Site responsive to all screens</p>
+              <a href="#" class="text-capitalize"
+                >read more <i class="fas fa-chevron-right icon"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="serv-box bg-light">
+              <div class="serv-icon">
+                <img src="imges/design-04.png" alt="desgin-icon" />
+              </div>
+              <h3 class="theme-color text-capitalize">PSD file to code</h3>
+              <p class="text-capitalize">convert PSD file to code</p>
+              <a href="#" class="text-capitalize"
+                >read more <i class="fas fa-chevron-right icon"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="serv-box bg-light">
+              <div class="serv-icon">
+                <img src="imges/design-05.png" alt="desgin-icon" />
+              </div>
+              <h3 class="theme-color text-capitalize">clean code</h3>
+              <p class="text-capitalize">clean code without erorrs</p>
+              <a href="#" class="text-capitalize"
+                >read more <i class="fas fa-chevron-right icon"></i>
+              </a>
+            </div>
           </div>
         </div>
-      </form>
+      </div>
     </div>
-  </div>
-  <!-- End Contact Me -->
+    <!-- End Services -->
 
-  <!-- Start Footer -->
-  <footer class="text-center">
-    <h2 class=" theme-color text-capitalize">Be in touch</h2>
-    <div class="social-box">
-      <ul class="list-unstyled">
-        <li> <i class="fab fa-facebook-f fa-fw"></i> </li>
-        <li> <i class="fab fa-twitter fa-fw"></i> </li>
-        <li> <i class="fab fa-instagram fa-fw"></i> </li>
-        <li> <i class="fab fa-google-plus-g fa-fw"></i> </li>
-        <li> <i class="fab fa-linkedin-in fa-fw"></i> </li>
-      </ul>
+    <!-- Start Work Experties -->
+    <div id="experties" class="experties block">
+      <div class="container">
+        <h2 class="theme-color text-capitalize text-center">work experties</h2>
+        <p class="text-center">
+          I have varied knowledge of these languages ​​and frameworks
+        </p>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="expert-box bg-light">
+              <div class="expert-icon">
+                <img src="imges/expert-01.png" alt="HtML5" />
+              </div>
+              <span>90%</span>
+              <h4 class="theme-color text-uppercase">html</h4>
+              <p class="text-capitalize">
+                HTML is the standard markup language for Web pages.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="expert-box bg-light">
+              <div class="expert-icon">
+                <img src="imges/expert-02.png" alt="CSS" />
+              </div>
+              <span>80%</span>
+              <h4 class="theme-color text-uppercase">css</h4>
+              <p class="text-capitalize">
+                CSS is a language that describes the style of an HTML document.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="expert-box bg-light">
+              <div class="expert-icon">
+                <img src="imges/expert-03.png" alt="Javascript" />
+              </div>
+              <span>70%</span>
+              <h4 class="theme-color text-uppercase">Javascript</h4>
+              <p class="text-capitalize">
+                JavaScript is the programming language of HTML and the Web
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="expert-box bg-light">
+              <div class="expert-icon">
+                <img src="imges/expert-04.png" alt="Bootstrap" />
+              </div>
+              <span>95%</span>
+              <h4 class="theme-color text-uppercase">Bootstrap</h4>
+              <p class="text-capitalize">
+                the most popular framework for developing responsive,
+                mobile-first website
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="expert-box bg-light">
+              <div class="expert-icon">
+                <img src="imges/expert-05.png" alt="Jquery" />
+              </div>
+              <span>60%</span>
+              <h4 class="theme-color text-uppercase">Jquery</h4>
+              <p class="text-capitalize">jQuery is a JavaScript Library.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="expert-box bg-light">
+              <div class="expert-icon">
+                <img src="imges/expert-06.png" alt="Vue.js" />
+              </div>
+              <span>90%</span>
+              <h4 class="theme-color text-uppercase">Vue.js</h4>
+              <p class="text-capitalize">
+                The Progressive JavaScript Framework
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="copy-right">
-      <p class="text-capitalize">&copy;2020 made with love by ehab elshahat</p>
+    <!-- End Work Experties -->
+
+    <!-- Start Portfolio -->
+    <div id="projects" class="portfolio block">
+      <div class="container">
+        <h2 class="theme-color text-capitalize text-center">
+          my work & Portfolio
+        </h2>
+        <p class="text-center">These are the projects I have completed</p>
+        <div class="row">
+          <div class="col-lg-12 col-md-12">
+            <div class="port-back">
+              <h3 class="theme-background project-date text-center">
+                19-9-2019
+              </h3>
+              <div class="port-left bg-light">
+                <img src="imges/project-01.png" alt="Project Photo" />
+                <div class="port-content">
+                  <h4 class="theme-color text-capitalize">travel blog</h4>
+                  <p>Lorem ipsum dolor sit amet.</p>
+                  <a
+                    class="theme-background link btn text-capitalize"
+                    href="https://ehab-elshahat.github.io/TravelBlog/"
+                    target="_blank"
+                    >Project link</a
+                  >
+                </div>
+              </div>
+
+              <div class="clearfix"></div>
+
+              <h3 class="theme-background project-date text-center">
+                11-5-2020
+              </h3>
+              <div class="port-right bg-light">
+                <img src="imges/project-02.png" alt="Project Photo" />
+                <div class="port-content">
+                  <h4 class="theme-color text-capitalize">On next</h4>
+                  <p>Lorem ipsum dolor sit amet.</p>
+                  <a
+                    class="theme-background link btn text-capitalize"
+                    href="https://ehab-elshahat.github.io/OnNext/"
+                    target="_blank"
+                    >Project link</a
+                  >
+                </div>
+              </div>
+
+              <div class="clearfix"></div>
+              <h3 class="theme-background project-date text-center">
+                10-7-2020
+              </h3>
+              <div class="port-left bg-light">
+                <img src="imges/project-03.png" alt="Project Photo" />
+                <div class="port-content">
+                  <h4 class="theme-color text-capitalize">Luxestate</h4>
+                  <p>Lorem ipsum dolor sit amet.</p>
+                  <a
+                    class="theme-background link btn text-capitalize"
+                    href="https://ehab-elshahat.github.io/Luxestate/"
+                    target="_blank"
+                    >Project link</a
+                  >
+                </div>
+              </div>
+
+              <div class="port-right bg-light">
+                <img src="imges/project-04.png" alt="Project Photo" />
+                <div class="port-content">
+                  <h4 class="theme-color text-capitalize">we</h4>
+                  <p>Lorem ipsum dolor sit amet.</p>
+                  <a
+                    class="theme-background link btn text-capitalize"
+                    href="https://ehab-elshahat.github.io/we/"
+                    target="_blank"
+                    >Project link</a
+                  >
+                </div>
+              </div>
+
+              <div class="clearfix"></div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </footer>
-  <!-- End Footer -->
+    <!-- End Portfolio -->
 
-  <!-- Start Scroll To Top Btn -->
-  <div class="totop">
-    <i class="fas fa-angle-up fa-fw"></i>
-  </div>
-  <!-- End Scroll To Top Btn -->
-  
-  <!-- libraries -->
-  <script src="js/all.js"></script>
-  <script src="js/popper.js"></script>
-  <script src="js/jquery.js"></script>
-  <script src="js/typed.min.js"></script>
-  <script src="js/jquery.bxslider.min.js"></script>
-  <script src="js/owl.carousel.js"></script>
-  <script src="js/bootstrap.min.js"></script>
+    <!-- Start Clients Say -->
+    <div id="testimonial" class="testimonial block">
+      <div class="container">
+        <h2 class="theme-color text-capitalize text-center">Clients Say</h2>
+        <p class="text-center">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br />
+          Eos hic voluptas at voluptatum blanditiis quod.
+        </p>
+        <div class="slider">
+          <div id="owl-example" class="owl-carousel">
+            <div>
+              <div class="content">
+                <img
+                  class="d-inline-block rounded-circle img-thumbnail"
+                  src="https://via.placeholder.com/50.png/09f/fff"
+                  alt=""
+                />
+                <div class="text">
+                  <h4 class="theme-color text-capitalize">"ehab elshahat"</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Quas, esse ad dolor assumenda odio eligendi!
+                  </p>
+                </div>
+              </div>
+            </div>
 
-  <!-- main code -->
-  <script src="js/code.js"></script>
-</body>
+            <div>
+              <div class="content">
+                <img
+                  class="d-inline-block rounded-circle img-thumbnail"
+                  src="https://via.placeholder.com/50.png/09f/fff"
+                  alt=""
+                />
+                <div class="text">
+                  <h4 class="theme-color text-capitalize">"ahmed elshahat"</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Quas, esse ad dolor assumenda odio eligendi!
+                  </p>
+                </div>
+              </div>
+            </div>
 
+            <div>
+              <div class="content">
+                <img
+                  class="d-inline-block rounded-circle img-thumbnail"
+                  src="https://via.placeholder.com/50.png/09f/fff"
+                  alt=""
+                />
+                <div class="text">
+                  <h4 class="theme-color text-capitalize">"anas ehab"</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Quas, esse ad dolor assumenda odio eligendi!
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="content">
+                <img
+                  class="d-inline-block rounded-circle img-thumbnail"
+                  src="https://via.placeholder.com/50.png/09f/fff"
+                  alt=""
+                />
+                <div class="text">
+                  <h4 class="theme-color text-capitalize">"mahmoud abdo"</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Quas, esse ad dolor assumenda odio eligendi!
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="content">
+                <img
+                  class="d-inline-block rounded-circle img-thumbnail"
+                  src="https://via.placeholder.com/50.png/09f/fff"
+                  alt=""
+                />
+                <div class="text">
+                  <h4 class="theme-color text-capitalize">"hossam ahmed"</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Quas, esse ad dolor assumenda odio eligendi!
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="content">
+                <img
+                  class="d-inline-block rounded-circle img-thumbnail"
+                  src="https://via.placeholder.com/50.png/09f/fff"
+                  alt=""
+                />
+                <div class="text">
+                  <h4 class="theme-color text-capitalize">"elsyed hassan"</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Quas, esse ad dolor assumenda odio eligendi!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Clients Say -->
+
+    <!-- Start Contact Me -->
+    <div id="contact" class="contact-me block bg-light">
+      <div class="container">
+        <h2 class="theme-color text-capitalize text-center">contact me</h2>
+        <p class="text-center">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet
+          architecto <br />
+          iusto repellat ex voluptatibus officia.
+        </p>
+        <div class="row">
+          <div class="col-lg-4 col-md-12">
+            <div class="contact-box text-center">
+              <div class="contact-icon">
+                <img src="imges/contact-me-phone.png" alt="phone icon" />
+              </div>
+              <h4 class="theme-color text-center">phone</h4>
+              <p>
+                Promising development turmoil inclusive education transformative
+                community
+              </p>
+              <a class="theme-color" href="tel:0096550602459"
+                >+965 506 054 59</a
+              >
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-12">
+            <div class="contact-box text-center">
+              <div class="contact-icon">
+                <img src="imges/contact-me-email.png" alt="email icon" />
+              </div>
+              <h4 class="theme-color text-center">email</h4>
+              <p>
+                Promising development turmoil inclusive education transformative
+                community
+              </p>
+              <a class="theme-color" href="mailto:ehabelshohat@yahoo.com"
+                >ehabelshohat@yahoo.com</a
+              >
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-12">
+            <div class="contact-box text-center">
+              <div class="contact-icon">
+                <img src="imges/contact-me-location.png" alt="location icon" />
+              </div>
+              <h4 class="theme-color text-center">location</h4>
+              <p>
+                Promising development turmoil inclusive education transformative
+                community
+              </p>
+              <a
+                class="theme-color"
+                href="https://goo.gl/maps/qoXzkMPFhvaU7YAw7"
+                target="_blank"
+                >View on Google map</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <form class="mt-5" action="">
+          <div class="row">
+            <div class="col-md-6 col-sm-12">
+              <div class="form-group">
+                <input
+                  class="form-control border rounded text-capitalize"
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="first name:"
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  class="form-control border rounded text-capitalize"
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="your email:"
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  class="form-control border rounded text-capitalize"
+                  type="text"
+                  name="subject"
+                  id="subject"
+                  placeholder="your subject:"
+                />
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+              <div class="form-group">
+                <textarea
+                  class="form-control text-capitalize border rounded"
+                  name="message"
+                  placeholder="your message:"
+                ></textarea>
+              </div>
+              <input
+                class="theme-background btn d-block ml-auto text-capitalize rounded mt-4"
+                type="submit"
+                value="send Message"
+              />
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- End Contact Me -->
+
+    <!-- Start Footer -->
+    <footer class="text-center">
+      <h2 class="theme-color text-capitalize">Be in touch</h2>
+      <div class="social-box">
+        <ul class="list-unstyled">
+          <li><i class="fab fa-facebook-f fa-fw"></i></li>
+          <li><i class="fab fa-twitter fa-fw"></i></li>
+          <li><i class="fab fa-instagram fa-fw"></i></li>
+          <li><i class="fab fa-google-plus-g fa-fw"></i></li>
+          <li><i class="fab fa-linkedin-in fa-fw"></i></li>
+        </ul>
+      </div>
+      <div class="copy-right">
+        <p class="text-capitalize">
+          &copy;2020 made with love by ehab elshahat
+        </p>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Start Scroll To Top Btn -->
+    <div class="theme-background totop">
+      <i class="fas fa-angle-up fa-fw"></i>
+    </div>
+    <!-- End Scroll To Top Btn -->
+
+    <!-- libraries -->
+    <script src="js/all.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/typed.min.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- main code -->
+    <script src="js/code.js"></script>
+  </body>
 </html>
