@@ -195,22 +195,36 @@ header .navbar.scrolling {
 
 header .hero-area {
   padding-top: 170px;
+  height: 100vh;
+}
+
+@media (max-width: 991px) {
+  header .hero-area {
+    padding-top: 82px;
+  }
+}
+
+@media (max-width: 767px) {
+  header .hero-area {
+    padding-top: 0;
+  }
 }
 
 header .hero-area .header-left {
-  padding-top: 100px;
+  padding-top: 60px;
   padding-bottom: 50px;
 }
 
 @media (max-width: 991px) {
   header .hero-area .header-left {
-    padding-top: 20px;
+    padding-top: 0;
   }
 }
 
 @media (max-width: 767px) {
   header .hero-area .header-left {
     padding-bottom: 10px;
+    padding-top: 150px;
   }
 }
 
@@ -243,9 +257,9 @@ header .hero-area .header-left .btns {
   display: block;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   header .hero-area .header-left .btns {
-    display: none;
+    text-align: center;
   }
 }
 
@@ -275,7 +289,7 @@ header .hero-area .header-right {
 
 @media (max-width: 767px) {
   header .hero-area .header-right {
-    padding-top: 0;
+    display: none;
   }
 }
 

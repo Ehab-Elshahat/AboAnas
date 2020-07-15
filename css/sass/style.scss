@@ -175,16 +175,27 @@ header {
 // Start Hero Area
 header .hero-area {
   padding-top: 170px;
+  height: 100vh;
+
+  @media(max-width: 991px) {
+    padding-top: 82px;
+  }
+
+  @media(max-width: 767px) {
+    padding-top: 0;
+  }
 
   .header-left {
-    padding-top: 100px;
+    padding-top: 60px;
     padding-bottom: 50px;
     @media (max-width: 991px) {
-      padding-top: 20px;
+      padding-top: 0;
     }
     @media (max-width: 767px) {
       padding-bottom: 10px;
+      padding-top: 150px;
     }
+    
     h1 {
       font-size: 4rem;
       span {
@@ -204,8 +215,9 @@ header .hero-area {
     }
     .btns {
       display: block;
-      @media (max-width: 991px) {
-        display: none;
+      @media (max-width: 767px) {
+        text-align: center;
+
       }
       a {
         background-color: $main-color;
@@ -228,7 +240,7 @@ header .hero-area {
   .header-right {
     padding-top: 30px;
     @media (max-width: 767px) {
-      padding-top: 0;
+     display: none;
     }
   }
 }
