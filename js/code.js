@@ -1,10 +1,9 @@
 $(function () {
-
   // Show Hide Popup
-  $(window).on("load", function() {
-    $(".spinner-container").delay(2000).fadeOut(500)
-  })
-  
+  $(window).on("load", function () {
+    $(".spinner-container").delay(2000).fadeOut(500);
+  });
+
   // When Window Scrolling
   // Select Scroll Top Btn
   var scrollToTopBtn = $(".totop");
@@ -28,7 +27,12 @@ $(function () {
 
   // Scroll To ToP
   scrollToTopBtn.on("click", function () {
-    $(window).scrollTop(0);
+    $("body, html").animate(
+      {
+        scrollTop: 0,
+      },
+      1000
+    );
   });
 
   //Add And Remove Class Active On NavbarLinks
