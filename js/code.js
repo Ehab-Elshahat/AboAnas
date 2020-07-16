@@ -1,4 +1,10 @@
 $(function () {
+
+  // Show Hide Popup
+  $(window).on("load", function() {
+    $(".spinner-container").delay(2000).fadeOut(500)
+  })
+  
   // When Window Scrolling
   // Select Scroll Top Btn
   var scrollToTopBtn = $(".totop");
