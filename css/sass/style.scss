@@ -124,14 +124,13 @@ header {
 
     .navbar-nav .nav-item.active > .nav-link {
       color: $main-color;
-      border-bottom: 2px solid $main-color;
     }
 
     .navbar-nav .nav-item .nav-link {
       color: $heading-color;
       text-transform: capitalize;
       margin-left: 8px;
-      font-weight: bold;
+      font-weight: normal;
       transition: all 0.3s ease-in-out;
       border-bottom: 2px solid transparent;
       &:hover {
@@ -328,16 +327,24 @@ header .heder-card {
     color: $text-color;
   }
   .serv-box {
-    border-radius: 1rem;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
     overflow: hidden;
     padding: 30px;
     margin-bottom: 30px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
     position: relative;
     z-index: 2;
 
-    &::before {
+    &:before {
       content: "";
       position: absolute;
       bottom: 0;
@@ -471,152 +478,23 @@ header .heder-card {
 .portfolio {
   h2 {
     margin-bottom: 20px;
-    color: $main-color;
   }
-  p {
-    margin-bottom: 2rem;
-    color: $text-color;
+  .project-desc {
+    margin-bottom: 30px;
+    color: #706767;
   }
+  .project-box {
+    min-height: 200px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 
-  .port-back {
-    position: relative;
-    padding: 30px 0;
-    &::before {
-      content: "";
-      position: absolute;
-      background-color: $main-color;
-      width: 3px;
-      height: 100%;
-      top: 0;
-      left: 50%;
-      @media (max-width: 991px) {
-        display: none;
-      }
-    }
-
-    .project-date {
-      background-color: $main-color;
-      color: $text-hover-color;
-      padding: 5px 10px;
-      width: 180px;
-      margin: auto auto 30px auto;
-      font-size: 1.3rem;
-      border-radius: 10px;
-      position: relative;
-      z-index: 3;
-    }
-
-    .port-left,
-    .port-right {
-      display: flex;
-      justify-content: space-between;
-      width: 45%;
-      padding: 30px;
-      border-radius: 1rem;
-      position: relative;
-      margin-bottom: 30px;
-      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-      &::before {
-        content: "";
-        border-width: 15px;
-        border-style: solid;
-        position: absolute;
-        transform: translateY(-50%);
-        @media (max-width: 991px) {
-          display: none;
-        }
-      }
-
-      &::after {
-        content: "";
-        position: absolute;
-        width: 20px;
-        height: 20px;
-        border-radius: 50%;
-        border: 2px solid $main-color;
-        background-color: #fff;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        @media (max-width: 991px) {
-          display: none;
-        }
-      }
-      img {
-        border-radius: 1rem;
-        width: 200px;
-        height: 200px;
-        @media (max-width: 991px) {
-          margin-bottom: 30px;
-          border-radius: 1rem;
-        }
-      }
-    }
-
-    .port-left {
-      float: left;
-      @media (max-width: 991px) {
-        float: none;
-        width: 100%;
-        display: block;
-        text-align: center;
-      }
-
-      &::before {
-        right: -30px;
-        top: 50%;
-        border-color: transparent transparent transparent #f8f9fa;
-      }
-
-      &::after {
-        right: -15.5%;
-      }
-    }
-
-    .port-right {
-      float: right;
-
-      @media (max-width: 991px) {
-        float: none;
-        width: 100%;
-        display: block;
-        text-align: center;
-      }
-
-      &::before {
-        left: -30px;
-        top: 50%;
-        border-color: transparent #f8f9fa transparent transparent;
-      }
-
-      &::after {
-        left: -10.5%;
-      }
-    }
-
-    .port-content {
-      background-color: $body-background-color;
-      padding: 15px;
-      border-radius: 1rem;
-
-      h4 {
-        color: $main-color;
-        font-weight: bold;
-        font-size: 1.3rem;
-        margin-bottom: 1rem;
-      }
-
-      p {
-        color: $text-color;
-      }
-      .link {
-        margin: 0 0 1rem;
-        color: $text-hover-color;
-        background-color: $main-color;
-
-        &:focus {
-          box-shadow: none;
-        }
-      }
+    .project-img {
+      max-height: 150px;
+      overflow: hidden;
     }
   }
 }
@@ -808,12 +686,12 @@ footer {
         background-color: $main-color;
         border: 1px solid $main-color;
         color: #fff;
-        transform: scale(1.2 ,1.2);
-        -webkit-transform: scale(1.2 ,1.2);
-        -moz-transform: scale(1.2 ,1.2);
-        -ms-transform: scale(1.2 ,1.2);
-        -o-transform: scale(1.2 ,1.2);
-}
+        transform: scale(1.2, 1.2);
+        -webkit-transform: scale(1.2, 1.2);
+        -moz-transform: scale(1.2, 1.2);
+        -ms-transform: scale(1.2, 1.2);
+        -o-transform: scale(1.2, 1.2);
+      }
     }
   }
 
@@ -855,5 +733,3 @@ footer {
   background-color: $main-color;
   border-radius: 5px;
 }
-
-
