@@ -94,6 +94,13 @@ $(function () {
     $(".settings-box").toggleClass("open");
   });
 
+  // Close Settings Box when click on body
+  $(document).keyup(function (e) {
+    if (e.keyCode == 27) {
+      $(".settings-box").removeClass("open");
+    }
+  });
+
   // Color Option
   $(".color-option ul li").click(function () {
     $(".color-option ul li").removeClass("active");
