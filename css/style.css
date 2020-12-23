@@ -583,6 +583,10 @@ header .heder-card .card .details-right p span {
   overflow: hidden;
 }
 
+.portfolio .project-box .project-info h3 {
+  font-weight: bold;
+}
+
 .testimonial {
   padding: 50px 0;
 }
@@ -835,6 +839,5 @@ footer .copy-right p {
 
 ::-webkit-scrollbar-thumb {
   background-color: #0d47a1;
-  border-radius: 5px;
 }
 /*# sourceMappingURL=style.css.map */
