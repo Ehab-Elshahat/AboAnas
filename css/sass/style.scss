@@ -172,6 +172,11 @@ header {
 // End Header
 
 // Start Hero Area
+header{
+  @media(max-width: 500px) {
+    padding-bottom: 30px;
+  }
+}
 header .hero-area {
   padding-top: 170px;
   height: 100vh;
@@ -182,6 +187,10 @@ header .hero-area {
 
   @media (max-width: 767px) {
     padding-top: 0;
+  }
+  @media (max-width: 500px) {
+    height: auto;
+   
   }
 
   .header-left {
@@ -194,6 +203,9 @@ header .hero-area {
       padding-bottom: 10px;
       padding-top: 150px;
     }
+    @media (max-width: 500px) {
+      padding-top: 90px;
+    }
 
     h1 {
       font-size: 4rem;
@@ -204,6 +216,9 @@ header .hero-area {
       @media (max-width: 767px) {
         font-size: 3rem;
         text-align: center;
+      }
+      @media (max-width: 500px) {
+        font-size: 2.5rem;
       }
     }
     p {
@@ -251,6 +266,16 @@ header .heder-card {
   left: 50%;
   top: 100%;
   transform: translate(-50%, -50%);
+
+  @media (max-width: 500px) {
+    position: unset;
+    margin-top: 20px;
+    transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+}
 
   .card {
     padding: 25px;
@@ -315,6 +340,9 @@ header .heder-card {
   }
   @media (max-width: 575px) {
     padding-top: 270px;
+  }
+  @media(max-width: 500px){
+    padding-top: 0;
   }
   h2 {
     margin-bottom: 15px;
@@ -495,9 +523,26 @@ header .heder-card {
     .project-img {
       max-height: 150px;
       overflow: hidden;
+      @media(max-width: 767px){
+        width: 100% !important;
+        margin-bottom: 20px;
+      }
     }
     .project-info h3 {
       font-weight: bold;
+      @media(max-width: 767px){
+        text-align: center;
+      }
+    }
+    .project-info .btn{
+      @media(max-width: 500px){
+        display: block;
+      }
+    }
+    @media(max-width: 767px){
+      height: auto;
+      flex-direction: column;
+      align-items: center;
     }
   }
 }

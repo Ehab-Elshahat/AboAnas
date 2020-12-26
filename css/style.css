@@ -192,6 +192,12 @@ header .navbar.scrolling {
           box-shadow: 0px 0px 33px 0px rgba(0, 0, 0, 0.2);
 }
 
+@media (max-width: 500px) {
+  header {
+    padding-bottom: 30px;
+  }
+}
+
 header .hero-area {
   padding-top: 170px;
   height: 100vh;
@@ -206,6 +212,12 @@ header .hero-area {
 @media (max-width: 767px) {
   header .hero-area {
     padding-top: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  header .hero-area {
+    height: auto;
   }
 }
 
@@ -227,6 +239,12 @@ header .hero-area .header-left {
   }
 }
 
+@media (max-width: 500px) {
+  header .hero-area .header-left {
+    padding-top: 90px;
+  }
+}
+
 header .hero-area .header-left h1 {
   font-size: 4rem;
 }
@@ -239,6 +257,12 @@ header .hero-area .header-left h1 span {
   header .hero-area .header-left h1 {
     font-size: 3rem;
     text-align: center;
+  }
+}
+
+@media (max-width: 500px) {
+  header .hero-area .header-left h1 {
+    font-size: 2.5rem;
   }
 }
 
@@ -299,6 +323,18 @@ header .heder-card {
   top: 100%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+@media (max-width: 500px) {
+  header .heder-card {
+    position: unset;
+    margin-top: 20px;
+    transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+  }
 }
 
 header .heder-card .card {
@@ -383,6 +419,12 @@ header .heder-card .card .details-right p span {
 @media (max-width: 575px) {
   .services {
     padding-top: 270px;
+  }
+}
+
+@media (max-width: 500px) {
+  .services {
+    padding-top: 0;
   }
 }
 
@@ -583,8 +625,40 @@ header .heder-card .card .details-right p span {
   overflow: hidden;
 }
 
+@media (max-width: 767px) {
+  .portfolio .project-box .project-img {
+    width: 100% !important;
+    margin-bottom: 20px;
+  }
+}
+
 .portfolio .project-box .project-info h3 {
   font-weight: bold;
+}
+
+@media (max-width: 767px) {
+  .portfolio .project-box .project-info h3 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .portfolio .project-box .project-info .btn {
+    display: block;
+  }
+}
+
+@media (max-width: 767px) {
+  .portfolio .project-box {
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .testimonial {
