@@ -113,12 +113,13 @@ $(function () {
     `https://api.github.com/users/Ehab-Elshahat/repos`,
     function (data, status) {
       if (status) {
-        data.forEach((repo) => {
+        data.forEach((repo, index) => {
           $(".repos-container").append(
             `<div class=" d-flex justify-content-between align-items-center mb-4">
-          <h4 class="repo-name  m-0">${repo.name}</h4>
-          <a href="${repo.html_url}" target="_blank">Repo Link</a>
-        </div>`
+            <h4 class="repo-name  m-0">${index +1}- ${repo.name}</h4>
+            <a href="${repo.html_url}" target="_blank">Repo Link</a>
+            </div>
+            `
           );
         });
       }
