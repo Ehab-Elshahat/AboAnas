@@ -1,9 +1,4 @@
 $(function () {
-  // Show Hide Popup
-  $(window).on("load", function () {
-    $(".spinner-container").delay(2000).fadeOut(500);
-  });
-
   // When Window Scrolling
   // Select Scroll Top Btn
   var scrollToTopBtn = $(".totop");
@@ -51,17 +46,6 @@ $(function () {
     loopCount: Infinity,
   });
 
-  // slide
-  $("#owl-example").owlCarousel({
-    loop: true,
-    nav: true,
-    dots: true,
-    autoplay: true,
-    autoplayTimeout: 3000,
-    autoplayHoverPause: true,
-    items: 1,
-  });
-
   // Sync links with sections
   $(".nav-item .nav-link").click(function (e) {
     e.preventDefault();
@@ -77,7 +61,7 @@ $(function () {
     var blocks = $(".block");
 
     blocks.each(function () {
-      if ($(window).scrollTop() > $(this).offset().top - 100) {
+      if ($(window).scrollTop() > $(this).offset().top) {
         var blockId = "#" + $(this).attr("id");
 
         $(".nav-item ").removeClass("active");
@@ -123,4 +107,21 @@ $(function () {
     "background-color": localStorage.getItem("theme-color"),
     color: "#FFF",
   });
+
+  // GitHub Api
+  $.get(
+    `https://api.github.com/users/Ehab-Elshahat/repos`,
+    function (data, status) {
+      if (status) {
+        data.forEach((repo) => {
+          $(".repos-container").append(
+            `<div class=" d-flex justify-content-between align-items-center mb-4">
+          <h4 class="repo-name  m-0">${repo.name}</h4>
+          <a href="${repo.html_url}" target="_blank">Repo Link</a>
+        </div>`
+          );
+        });
+      }
+    }
+  );
 });
