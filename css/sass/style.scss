@@ -103,11 +103,11 @@ header {
     @media (max-width: 991px) {
       background-color: $text-hover-color;
     }
-    .navbar-brand img {
-      width: 40px;
+    .navbar-brand h2 {
+      color: $main-color;
 
-      @media (max-width: 991px) {
-        margin-left: 25px;
+      @media(max-width:991px) {
+        padding-left: 25px;
       }
     }
 
@@ -178,7 +178,7 @@ header {
   }
 }
 header .hero-area {
-  padding-top: 170px;
+
   height: 100vh;
 
   @media (max-width: 991px) {
@@ -200,7 +200,7 @@ header .hero-area {
     }
     @media (max-width: 767px) {
       padding-bottom: 10px;
-      padding-top: 150px;
+     margin-bottom: 170px;
     }
     @media (max-width: 500px) {
       padding-top: 90px;
