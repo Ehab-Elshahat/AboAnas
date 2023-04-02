@@ -191,7 +191,14 @@ header .hero-area {
   @media (max-width: 500px) {
     height: auto;
   }
-
+.container-header-left {
+  @media(max-width:767px){
+    justify-content: center;
+  }
+  @media(max-width:500px) {
+    margin-top: 120px;
+  }
+}
   .header-left {
     padding-top: 60px;
     padding-bottom: 50px;
